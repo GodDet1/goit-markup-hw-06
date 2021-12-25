@@ -289,8 +289,6 @@ div.is-hidden {
 }
 
 .hero-modal {
-  display: flex;
-  justify-content: flex-end;
   position: absolute;
   width: 528px;
   height: 581px;
@@ -317,9 +315,63 @@ div.is-hidden {
 }
 
 .hero-modal .hero-modal_exit {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero-modal {
+  padding: 40px;
+}
+
+.hero-modal_heading {
+  margin-top: 0px;
+  margin-bottom: 12px;
+
+  color: var(--headline-color);
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+}
+
+.hero-modal_form {
+  margin: 0px;
+}
+
+.hero-modal_form li {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-modal_form li label {
+  text-align: start;
+
+  color: var(--text-color);
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+}
+
+.hero-modal_input {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.hero-modal_form li textarea {
+  resize: none;
+  height: 120px;
+  margin-bottom: 20px;
 }
 
 /* About us */
@@ -680,6 +732,59 @@ footer .container.centered {
 
 .footer-icons {
   fill: var(--main-color);
+}
+
+.footer-mailing {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.footer-mailing_description {
+  margin-bottom: 20px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.footer-mailing_filed {
+  padding: 15px 16px;
+  width: 358px;
+
+  background-color: var(--bg-alternate-color);
+
+  color: #ffffff99;
+  font-size: 16px;
+  line-height: 1.25;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-mailing_filed:placeholder-shown {
+  color: #ffffff99;
+}
+
+.footer-mailing_button {
+  padding: 10px 29px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: var(--main-color);
+  background-color: var(--accent-color);
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* Portffolio page */

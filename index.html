@@ -18,6 +18,7 @@
   </head>
   <body>
     <!-- Header-->
+
     <header>
       <div class="nav container centered">
         <a href="" class="logo"><span class="web">Web</span>Studio</a>
@@ -52,6 +53,7 @@
     </header>
     <main>
       <!-- Hero-->
+
       <section class="hero">
         <h1>
           Эффективные решения<br />
@@ -65,11 +67,40 @@
                 <use href="./images/sprite.svg#icon-vector"></use>
               </svg>
             </button>
+            <p class="hero-modal_heading">Оставьте свои данные, мы вам перезвоним</p>
+            <form>
+              <ul class="hero-modal_form">
+                <li>
+                  <label for="hero-modal_name">Имя</label>
+                  <input type="text" name="name" id="hero-modal_name" class="hero-modal_input"/>
+                </li>
+                <li>
+                  <label for="hero-modal_tel">Телефон</label>
+                  <input type="tel" name="telephone" id="hero-modal_tel" class="hero-modal_input"/>
+                </li>
+                <li>
+                  <label for="hero-modal_email">Почта</label>
+                  <input type="email" name="email" id="hero-modal_email"class="hero-modal_input" />
+                </li>
+                <li>
+                  <label for="hero-modal_comment">Комментарий</label>
+                  <textarea name="comment" id="hero-modal_comment"class="hero-modal_input"></textarea>
+                </li>
+                <li>
+                  <label for="hero-modal_license">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="#" class="hero-modal_contract">Условия договора</a>
+                  </label>
+                  <input type="checkbox" name="license" id="hero-modal_license" class="hero-modal_input"/>
+                </li>
+              </ul>
+            </form>
           </div>
         </div>
       </section>
 
       <!-- About us-->
+
       <section class="us section-padding">
         <h2 hidden>Наши преимущества</h2>
         <div class="container centered">
@@ -127,6 +158,7 @@
       </section>
 
       <!-- Our work-->
+
       <section class="ourwork section-padding">
         <div class="container centered">
           <h2>Чем мы занимаемся</h2>
@@ -154,6 +186,7 @@
       </section>
 
       <!-- Team-->
+
       <section class="team section-padding">
         <h2>Наша команда</h2>
         <div class="container centered">
@@ -310,6 +343,9 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+
     <footer>
       <div class="container centered">
         <div class="footer-studio">
@@ -350,6 +386,23 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <form class="footer-mailing">
+            <label for="footer-mailing_filed" class="footer-mailing_description">
+              Подпишитесь на рассылку
+            </label>
+            <div>
+              <input
+                type="email"
+                name="mailing"
+                class="footer-mailing_filed"
+                id="footer-mailing_filed"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="footer-mailing_button">Подписаться</button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
