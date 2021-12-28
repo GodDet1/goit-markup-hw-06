@@ -72,28 +72,75 @@
               <ul class="hero-modal_form">
                 <li>
                   <label for="hero-modal_name">Имя</label>
-                  <input type="text" name="name" id="hero-modal_name" class="hero-modal_input"/>
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      id="hero-modal_name"
+                      class="hero-modal_input"
+                      required
+                    />
+                    <svg width="18" height="18" class="hero-modal_icon">
+                      <use href="./images/sprite.svg#icon-person"></use>
+                    </svg>
+                  </div>
                 </li>
                 <li>
                   <label for="hero-modal_tel">Телефон</label>
-                  <input type="tel" name="telephone" id="hero-modal_tel" class="hero-modal_input"/>
+                  <div>
+                    <input
+                      type="tel"
+                      name="phone-number"
+                      id="hero-modal_tel"
+                      class="hero-modal_input"
+                      pattern="[0-9]{10}"
+                      title="0500505050"
+                      required
+                    />
+                    <svg width="18" height="18" class="hero-modal_icon">
+                      <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </div>
                 </li>
                 <li>
                   <label for="hero-modal_email">Почта</label>
-                  <input type="email" name="email" id="hero-modal_email"class="hero-modal_input" />
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="hero-modal_email"
+                      class="hero-modal_input"
+                      required
+                    />
+                    <svg width="18" height="18" class="hero-modal_icon">
+                      <use href="./images/sprite.svg#icon-fill_mail"></use>
+                    </svg>
+                  </div>
                 </li>
                 <li>
                   <label for="hero-modal_comment">Комментарий</label>
-                  <textarea name="comment" id="hero-modal_comment"class="hero-modal_input"></textarea>
+                  <textarea
+                    name="comment"
+                    id="hero-modal_comment"
+                    class="hero-modal_input"
+                    placeholder="Введите текст"
+                  ></textarea>
                 </li>
-                <li>
-                  <label for="hero-modal_license">
+                <li class="hero-modal_agreed">
+                  <input
+                    type="checkbox"
+                    name="license"
+                    id="hero-modal_license"
+                    class="hero-modal_input"
+                    required
+                  />
+                  <label for="hero-modal_license" class="hero-modal_license">
                     Соглашаюсь с рассылкой и принимаю
                     <a href="#" class="hero-modal_contract">Условия договора</a>
                   </label>
-                  <input type="checkbox" name="license" id="hero-modal_license" class="hero-modal_input"/>
                 </li>
               </ul>
+              <button type="submit" class="hero-button">Отправить</button>
             </form>
           </div>
         </div>
@@ -400,7 +447,12 @@
                 id="footer-mailing_filed"
                 placeholder="E-mail"
               />
-              <button type="submit" class="footer-mailing_button">Подписаться</button>
+              <button type="submit" class="footer-mailing_button">
+                Подписаться
+                <svg width="24px" height="24px" class="footer-icon_send">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>

@@ -1,0 +1,12 @@
+input:focus + svg {
+  border-color: red;
+  /* background-color: red; */
+  fill: seagreen;
+}
+
+input:focus {
+  border-color: red;
+  /* background-color: red; */
+  fill: seagreen;
+  outline: none;
+}
