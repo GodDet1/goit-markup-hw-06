@@ -279,7 +279,30 @@
             </li>
           </ul>
         </div>
+        <div>
+          <form class="footer-mailing">
+            <label for="footer-mailing_filed" class="footer-mailing_description">
+              Подпишитесь на рассылку
+            </label>
+            <div>
+              <input
+                type="email"
+                name="mailing"
+                class="footer-mailing_filed"
+                id="footer-mailing_filed"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="footer-mailing_button">
+                Подписаться
+                <svg width="24px" height="24px" class="footer-icon_send">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
