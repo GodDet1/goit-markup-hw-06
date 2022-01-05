@@ -312,6 +312,8 @@ div.is-hidden {
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transition: fill var(--transition-time-cubic);
 }
 
 .hero-modal .hero-modal_exit {
@@ -321,6 +323,8 @@ div.is-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: fill var(--transition-time-cubic);
 }
 
 .hero-modal_exit:hover,
@@ -366,7 +370,7 @@ div.is-hidden {
 .hero-modal_input {
   width: 100%;
 
-  padding: 12px 15px;
+  padding: 11px 15px;
 
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -450,6 +454,10 @@ div.is-hidden {
   color: var(--accent-color);
 }
 
+.hero-modal_comment {
+  margin-bottom: 4px;
+}
+
 
 .hero-modal_license::before {
   display: block;
@@ -472,6 +480,10 @@ div.is-hidden {
   border-color: var(--accent-color);
 
   fill: white;
+}
+
+.hero-modal_button {
+  padding: 10px 55px;
 }
 
 /* About us */
